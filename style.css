@@ -1,0 +1,35 @@
+.leftPart{
+    height: 100%;
+    width: 50%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(20, 148,247);
+    text-align: center;
+}
+.rightPart{
+    height: 100%;
+    width: 50%;
+    position:fixed;
+    top: 0;
+  right: 0;
+    background-color: rgb(73, 149, 207);
+    text-align: center;
+}
+.left{
+   left: 0;
+   text-align: center;
+}
+
+
+.right{
+    right: 0;
+    text-align: left;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
