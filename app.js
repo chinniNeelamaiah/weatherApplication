@@ -5,14 +5,14 @@ var today = daysInWeek[day];
 var hours =date.getHours();
 var min =date.getMinutes();
 
-document.getElementById("dayAndTime").innerText=(today+hours+min);
+document.getElementById("dateAndTime").innerText=(today+" "+hours+" "+min);
 
 var weatherInCities = [
-    {city: "hyd,telangana",climaticCondition:"sunny", temaparature:45},
-    {city: "bhopal,madhyapradesh",climaticCondition:"sunny", temaparature:40},
-    {city: "imphal,manipur",climaticCondition:"cloudy", temaparature:15},
-    {city: "kohima,nagaland",climaticCondition:"rainy", temaparature:22},
-    {city: "agarthala,tripura",climaticCondition:"humid", temaparature:20}
+    {city: "Hyderabad,Telangana",climateCondition:"sunny", temperature:45},
+    {city: "Mhopal,Madhyapradesh",climateCondition:"sunny", temperature:40},
+    {city: "Imphal,Manipur",climateCondition:"cloudy", temperature:15},
+    {city: "Kohima,Nagaland",climateCondition:"rainy", temperature:22},
+    {city: "Agarthala,Tripura",climateCondition:"humid", temperature:20}
 ]
 
 function getWeather(){
@@ -21,12 +21,12 @@ function getWeather(){
     var weatherInSelectedCity=weatherInCities.find(e=>{
         return e.city==selectedCityFromList
     })
-    document.getElementById("climate").innerText=weatherInSelectedCity.climateCondition;
+    document.getElementById("climate").innerText= weatherInSelectedCity.climateCondition;
     document.getElementById("temp").innerText=weatherInSelectedCity.temperature;
     document.getElementById("city").innerText=selectedCityFromList;
-    document.getElementById("Latitude").innerText=weatherInSelectedCity.Latitude;
-    document.getElementById("Longitude").innerText=weatherInSelectedCity.Longitude;
-    document.getElementById("precipitation").innerText=weatherInSelectedCity.precipitation;
+   //document.getElementById("Latitude").innerText=weatherInSelectedCity.Latitude;
+    //document.getElementById("Longitude").innerText=weatherInSelectedCity.Longitude;
+    //document.getElementById("precipitation").innerText=weatherInSelectedCity.precipitation;
 }
 function getFahrenheit(){
     var list=document.getElementById("list");
