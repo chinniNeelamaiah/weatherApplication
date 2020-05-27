@@ -5,7 +5,7 @@ var today = daysInWeek[day];
 var hours =date.getHours();
 var min =date.getMinutes();
 
-document.getElementById("dayAndTime").innerText= '${today} ${hours}:${min}';
+document.getElementById("dayAndTime").innerText=(today+hours+min);
 
 var weatherInCities = [
     {city: "hyd,telangana",climaticCondition:"sunny", temaparature:45},
