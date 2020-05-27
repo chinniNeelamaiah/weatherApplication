@@ -4,7 +4,7 @@
     position:fixed;
     top: 0;
     left: 0;
-    background-color: rgb(20, 148,247);
+    background-color: rgb(163, 49, 148);
     text-align: center;
 }
 .rightPart{
@@ -13,7 +13,7 @@
     position:fixed;
     top: 0;
   right: 0;
-    background-color: rgb(73, 149, 207);
+    background-color: rgb(78, 167, 100);
     text-align: center;
 }
 .left{
