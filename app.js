@@ -9,7 +9,7 @@ document.getElementById("dateAndTime").innerText=(today+" "+hours+" "+min);
 
 var weatherInCities = [
     {city: "Hyderabad,Telangana",climateCondition:"sunny", temperature:45},
-    {city: "Mhopal,Madhyapradesh",climateCondition:"sunny", temperature:40},
+    {city: "Bhopal,Madhyapradesh",climateCondition:"sunny", temperature:40},
     {city: "Imphal,Manipur",climateCondition:"cloudy", temperature:15},
     {city: "Kohima,Nagaland",climateCondition:"rainy", temperature:22},
     {city: "Agarthala,Tripura",climateCondition:"humid", temperature:20}
