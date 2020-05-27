@@ -24,9 +24,6 @@ function getWeather(){
     document.getElementById("climate").innerText= weatherInSelectedCity.climateCondition;
     document.getElementById("temp").innerText=weatherInSelectedCity.temperature;
     document.getElementById("city").innerText=selectedCityFromList;
-   //document.getElementById("Latitude").innerText=weatherInSelectedCity.Latitude;
-    //document.getElementById("Longitude").innerText=weatherInSelectedCity.Longitude;
-    //document.getElementById("precipitation").innerText=weatherInSelectedCity.precipitation;
 }
 function getFahrenheit(){
     var list=document.getElementById("list");
