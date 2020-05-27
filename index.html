@@ -6,18 +6,24 @@
     <title>weatherApplication</title>
     <link rel="stylesheet" href="style.css">
     
+    
 </head>
 <body>
-    <div>
-        <h1>weatherApp</h1>
+    <div class="leftPart">
+        <div class="centered">
+            <h1 class="appTitle">weatherApp</h1>
+        </div>
+        
     </div>
-    <div>
-        <h1>please select the city</h1>
-        <p>date </p>
-        <h1>climatic condition</h1>
-        <h2>temparature</h2>
-        <button>celsius</button>
-        <button>fahrenheit</button>
+    <div class="rightPart">
+        <div class="centered">
+        <h1 id="city">please select the city</h1>
+        <p id="dateAndTime">date </p>
+        <h1 id="climate">climatic condition</h1>
+        <h2 id="temp">temparature</h2>
+        <button class="cel" onclick="getCelsius()">&#8451</button>
+        <button class="fah" onclick="getFahrenheit()">&#8457</button>
+        <label for="list">Select the city</label>
         <select  id="list">
             <option value="hyd,telangana">hyd,telangana</option>
             <option value="bhopal,madhyapradesh">bhopal,madhyapradesh </option>
@@ -25,7 +31,9 @@
             <option value="kohima,nagaland">kohima,nagaland</option>
             <option value="agarthala,tripura">agarthala,tripura</option>
         </select>
-        <input type="button" value="submit">
+        <input type="button" value="submit" onclick="getweather()">
+        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
